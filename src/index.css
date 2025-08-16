@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: 350px 1fr; /* sidebar 350px, контент - решта */
+	min-height: 100vh;
+}
+
+.sidebar {
+	width: 350px;
+	background: #2c3e50;
+	color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	padding: 20px;
+	background: #ecf0f1;
+}
+
+.sidebar a {
+	color: white;
+	text-decoration: none;
+}
+.sidebar h2 {
+	margin-bottom: 20px;
+}
+
+.sidebar li {
+	margin-bottom: 20px;
+}
+
+.not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.not-found h1 {
+	font-size: 6rem;
+	margin-bottom: 1rem;
+}
+
+.not-found a {
+	color: #0066cc;
+	text-decoration: none;
+	margin-top: 1rem;
+}
+
+.not-found a:hover {
+	text-decoration: underline;
+}

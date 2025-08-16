@@ -1,0 +1,140 @@
+.share-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.share-modal-content {
+	background: white;
+	padding: 2rem;
+	border-radius: 16px;
+	width: 90%;
+	max-width: 500px;
+	position: relative;
+	box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.share-modal-content h3 {
+	color: #1e293b;
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.share-form {
+	margin-bottom: 1.5rem;
+}
+
+.share-form .form-group {
+	margin-bottom: 1rem;
+}
+
+.share-form label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #475569;
+	font-size: 0.875rem;
+}
+
+.share-form input {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border: 2px solid #e2e8f0;
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: all 0.2s ease;
+}
+
+.share-form input:focus {
+	outline: none;
+	border-color: #6366f1;
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.share-form button {
+	width: 100%;
+	padding: 0.75rem 1.5rem;
+	background: linear-gradient(135deg, #6366f1, #8b5cf6);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.share-form button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2);
+}
+
+.share-form button:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.error-message {
+	color: #ef4444;
+	margin: 1rem 0;
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+.search-results {
+	margin-top: 1.5rem;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.user-result {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75rem;
+	background: #f8fafc;
+	border-radius: 8px;
+	margin-bottom: 0.5rem;
+}
+
+.user-result span {
+	color: #1e293b;
+}
+
+.share-button {
+	padding: 0.5rem 1rem;
+	background: #6366f1;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 0.875rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.share-button:hover {
+	background: #4f46e5;
+}
+
+.close-button {
+	margin-top: 1.5rem;
+	width: 100%;
+	padding: 0.75rem;
+	background: #e2e8f0;
+	color: #475569;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.close-button:hover {
+	background: #cbd5e1;
+}
